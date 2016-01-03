@@ -32,6 +32,7 @@ As máscaras existentes são
 - cnpj
 - cpf
 - cep
+- ncm
 
 Gostaria de ver alguma máscara que ainda não existe no projeto? então abra uma issue __[aqui]__, e deixe na descrição um exemplo de como seria essa máscara :D .
 
