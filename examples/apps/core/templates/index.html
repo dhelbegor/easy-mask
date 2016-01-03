@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load easy_mask %}
+
+{% block title %}
+    <title>Home</title>
+{% endblock title %}
+
+{% block content %}
+    <br />
+    <div align="center">
+        <h1><b>DADOS PESSOAIS</b></h1>   
+    </div>
+    <div align="center">
+        <h3><b>Easy-Mask</b></h3>
+    </div>
+    <div class="container" align="center">
+        <div class="row col-md-12" id="custab">
+            <table class="table table-bordered table-striped table-condensed">
+                <thead class="color">
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Tel. Fixo</th>
+                        <th>Tel. Celular</th>
+                        <th>CNPJ</th>
+                        <th>CEP</th>
+			            <th>NCM Produto</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                {% for data in personal %}
+                    <tr>
+                        <td>{{ data.full_name | title }}</td>
+                        <td>{{ data.cpf | cpf }}</td>
+                        <td>{{ data.phone | phone }}</td>
+                        <td>{{ data.cell | phone }}</td>
+                        <td>{{ data.cnpj | cnpj }}</td>
+                        <td>{{ data.cep | cep }}</td>
+			            <td>{{ data.ncm | ncm }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock content %}

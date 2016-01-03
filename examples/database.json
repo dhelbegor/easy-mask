@@ -1,0 +1,606 @@
+[
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "core",
+    "model": "personaldata"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ey4pubmpffj8pthuvqhxw2gpv049e0dc",
+  "fields": {
+    "session_data": "NWJiZDc4MTEzZjg0MTc1MjY3Y2FiNzUzZmMyN2I2NDk4OTQ3ZTYyMjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9oYXNoIjoiMWEyOWJiMzc5YjIxNGQwYjAwNzc5YmQwZmJjNGM3Njc0MTQ5ZDVkYiIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+    "expire_date": "2016-01-16T13:55:19.674Z"
+  }
+},
+{
+  "model": "core.personaldata",
+  "pk": 2,
+  "fields": {
+    "first_name": "TORRI",
+    "last_name": "NEDRY",
+    "phone": "1235545665",
+    "cell": "4544845656",
+    "cpf": "21215542165",
+    "cnpj": "11513554659854",
+    "cep": "25154546",
+    "ncm": "45112355"
+  }
+},
+{
+  "model": "core.personaldata",
+  "pk": 3,
+  "fields": {
+    "first_name": "VERTIE",
+    "last_name": "NAIDOO",
+    "phone": "1454848451",
+    "cell": "4515184626",
+    "cpf": "21545432232",
+    "cnpj": "12154656592323",
+    "cep": "62623232",
+    "ncm": "32121658"
+  }
+},
+{
+  "model": "core.personaldata",
+  "pk": 4,
+  "fields": {
+    "first_name": "MOISES",
+    "last_name": "NAGELSCHMIDT",
+    "phone": "1541744565",
+    "cell": "1515154621",
+    "cpf": "23154659223",
+    "cnpj": "25154126232132",
+    "cep": "15965132",
+    "ncm": "61232154"
+  }
+},
+{
+  "model": "core.personaldata",
+  "pk": 5,
+  "fields": {
+    "first_name": "BRYON",
+    "last_name": "NEAS",
+    "phone": "4546516161",
+    "cell": "5545451885",
+    "cpf": "23252623232",
+    "cnpj": "25212329656595",
+    "cep": "23232652",
+    "ncm": "33269529"
+  }
+},
+{
+  "model": "core.personaldata",
+  "pk": 6,
+  "fields": {
+    "first_name": "BERNA",
+    "last_name": "NEEDLE",
+    "phone": "1515454845",
+    "cell": "32626565454",
+    "cpf": "32326565645",
+    "cnpj": "32326565448484",
+    "cep": "21323264",
+    "ncm": "32326656"
+  }
+},
+{
+  "model": "core.personaldata",
+  "pk": 7,
+  "fields": {
+    "first_name": "ANAMARIA",
+    "last_name": "NEIBERT",
+    "phone": "1545484841",
+    "cell": "65656598582",
+    "cpf": "23265656545",
+    "cnpj": "26232356565956",
+    "cep": "56232326",
+    "ncm": "23265656"
+  }
+},
+{
+  "model": "core.personaldata",
+  "pk": 8,
+  "fields": {
+    "first_name": "ARLINDA",
+    "last_name": "NARDECCHIA",
+    "phone": "5151251226",
+    "cell": "15454584823",
+    "cpf": "26262665695",
+    "cnpj": "62323463526526",
+    "cep": "32326564",
+    "ncm": "62322656"
+  }
+},
+{
+  "model": "core.personaldata",
+  "pk": 9,
+  "fields": {
+    "first_name": "THADDEUS",
+    "last_name": "NAPIERALA",
+    "phone": "1252156454",
+    "cell": "2626565656",
+    "cpf": "12545612321",
+    "cnpj": "12151564654654",
+    "cep": "15215156",
+    "ncm": "52160612"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can add dado pessoal",
+    "content_type": 7,
+    "codename": "add_personaldata"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can change dado pessoal",
+    "content_type": 7,
+    "codename": "change_personaldata"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can delete dado pessoal",
+    "content_type": 7,
+    "codename": "delete_personaldata"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$24000$O3tPfgMpo8GV$NSAs2xN5Dg68olODpwhhQ821HT4jUahxrcTpUAh5oaE=",
+    "last_login": "2016-01-01T05:24:59.587Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2016-01-01T05:24:43.023Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2016-01-01T05:25:21.120Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "adailton nascimento",
+    "action_flag": 1,
+    "change_message": "Adicionado."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2016-01-02T13:04:13.632Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "adailton nascimento",
+    "action_flag": 2,
+    "change_message": "Modificado ncm."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2016-01-02T13:06:07.390Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "adailton nascimento",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2016-01-02T13:23:09.503Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "TORRI NEDRY",
+    "action_flag": 1,
+    "change_message": "Adicionado."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2016-01-02T13:23:48.470Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "VERTIE NAIDOO",
+    "action_flag": 1,
+    "change_message": "Adicionado."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2016-01-02T13:24:21.258Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "MOISES NAGELSCHMIDT",
+    "action_flag": 1,
+    "change_message": "Adicionado."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2016-01-02T13:25:04.064Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "MOISES NAGELSCHMIDT",
+    "action_flag": 2,
+    "change_message": "Nenhum campo modificado."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2016-01-02T13:25:42.976Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "BRYON NEAS",
+    "action_flag": 1,
+    "change_message": "Adicionado."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2016-01-02T13:26:12.841Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "BERNA NEEDLE",
+    "action_flag": 1,
+    "change_message": "Adicionado."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2016-01-02T13:26:56.420Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "ANAMARIA NEIBERT",
+    "action_flag": 1,
+    "change_message": "Adicionado."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2016-01-02T13:27:45.419Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "ARLINDA NARDECCHIA",
+    "action_flag": 1,
+    "change_message": "Adicionado."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2016-01-02T13:28:34.466Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "THADDEUS NAPIERALA",
+    "action_flag": 1,
+    "change_message": "Adicionado."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2016-01-02T13:28:45.782Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "BRYON NEAS",
+    "action_flag": 2,
+    "change_message": "Modificado cell."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2016-01-02T13:29:03.341Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "MOISES NAGELSCHMIDT",
+    "action_flag": 2,
+    "change_message": "Modificado cell."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2016-01-02T13:29:13.962Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "TORRI NEDRY",
+    "action_flag": 2,
+    "change_message": "Modificado cell."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2016-01-02T13:29:26.303Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "VERTIE NAIDOO",
+    "action_flag": 2,
+    "change_message": "Modificado cell."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2016-01-02T13:55:19.530Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "admin",
+    "action_flag": 2,
+    "change_message": "Modificado password."
+  }
+}
+]
