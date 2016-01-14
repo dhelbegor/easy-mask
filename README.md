@@ -3,24 +3,25 @@
 Um simples pacote para uso de máscaras no django [demo]
 
 ##Instalação
-
+```
     pip install easy-mask
-    
+```
     
 ##Configuração
 
 Adicione o pacote ao [__INSTALLED_APPS__](https://docs.djangoproject.com/en/1.9/ref/settings/#installed-apps)
 
+```python
 INSTALLED_APPS = [
 
     'easy_mask',
 
 ]
-
+```
 para usar o mesmo basta adicionar {% load easy_mask %} no inicio de template/html .
 
 ##exemplo de uso
-
+```python
     {% for data in personal %}
       <tr>
         <td>{{ data.cpf | cpf }}</td>
@@ -29,7 +30,7 @@ para usar o mesmo basta adicionar {% load easy_mask %} no inicio de template/htm
         <td>{{ data.cep | cep }}</td>
       </tr>
     {% endfor %}
-
+```
 ##observação
 
 As máscaras existentes são
