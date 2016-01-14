@@ -11,6 +11,12 @@ Um simples pacote para uso de máscaras no django [demo]
 
 Adicione o pacote ao [__INSTALLED_APPS__](https://docs.djangoproject.com/en/1.9/ref/settings/#installed-apps)
 
+INSTALLED_APPS = [
+
+    'easy_mask',
+
+]
+
 para usar o mesmo basta adicionar {% load easy_mask %} no inicio de template/html .
 
 ##exemplo de uso
@@ -29,8 +35,9 @@ para usar o mesmo basta adicionar {% load easy_mask %} no inicio de template/htm
 As máscaras existentes são
 
 - phone
-- cnpj
 - cpf
+- rg
+- cnpj
 - cep
 - ncm
 

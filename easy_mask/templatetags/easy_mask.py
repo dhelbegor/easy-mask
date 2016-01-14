@@ -1,14 +1,16 @@
 from django import template
+from .utils import empty_phone, empty_cpf, empty_rg, empty_cnpj, empty_cep, empty_ncm
+import re
+
 
 
 register = template.Library()
 
-
-class PhoneRegex():
-    @register.filter(name='phone')
-    def PhoneMask(PHONE):
-        """ Return (00) 0000-0000 or (00) 00000-0000 """
-        try:
+@register.filter(name='phone')
+def phone_mask(PHONE, empty="", placeholder=empty_phone):
+    """ Return (00) 00000-0000 or (00) 0000-0000  """
+    try:
+        if PHONE is not empty:
             if len(PHONE) >=11:
                 a = PHONE[0:2]
                 b = PHONE[2:7]
@@ -19,54 +21,84 @@ class PhoneRegex():
                 b = PHONE[2:6]
                 c = PHONE[6:10]
                 return '(' + a + ')' + ' ' + b + '-' + c
-        except ValueError:
-            print('error in the counting of numeric characters')
+        else:
+            return placeholder
+    except ValueError:
+        print(error_message)
 
 
-class CpfRegex():
-    @register.filter(name='cpf')
-    def CpfMask(CPF):
-        """ Return 000.000.000-00 """
+
+@register.filter(name='cpf')
+def cpf_mask(CPF, empty="", placeholder=empty_cpf):
+    """ Return 000.000.000-00 """
+    if CPF is not empty:
         a = CPF[0:3]
         b = CPF[3:6]
         c = CPF[6:9]
         d = CPF[9:11]
         return a + '.' + b + '.' + c + '-' + d
+    else:
+        return placeholder
+            
 
 
-class RgRegex():
-    @register.filter(name='rg')
-    def RgMask(RG):
-        """ Return 00.000.000-0 or 0.000.000 or 0.000.000-00 """
-        pass
+@register.filter(name='rg')
+def rg_mask(RG, empty="", placeholder=empty_rg):
+    """ Return 00.000.000-0 or 0.000.000 """
+    try:
+        if RG is not empty:
+            if len(RG) >=7:
+                a = RG[0:2]
+                b = RG[2:5]
+                c = RG[5:8]
+                d = RG[8:9]
+                return a + '.' + b + '.' + c + '-' + d
+            else:
+                a = RG[0:1]
+                b = RG[1:4]
+                c = RG[4:7]
+                return a + '.' + b + '.' + c
+        else:
+            return placeholder
+    except ValueError:
+        print(error_message)
 
 
-class CnpjRegex():
-    @register.filter(name='cnpj')
-    def CnpjMask(CNPJ):
-        """ Return 00.000.000/0000-00 """
+
+@register.filter(name='cnpj')
+def cnpj_mask(CNPJ, empty="", placeholder=empty_cnpj):
+    """ Return 00.000.000/0000-00 """
+    if CNPJ is not empty:
         a = CNPJ[0:2]
         b = CNPJ[2:5]
         c = CNPJ[5:8]
         d = CNPJ[8:12]
         e = CNPJ[12:14]
         return a + '.' + b + '.' + c + '/' + d + '-' + e
+    else:
+        return placeholder
 
 
-class CepRegex():
-    @register.filter(name='cep')
-    def CepMask(CEP):
-        """ Return 00000-000 """
+
+@register.filter(name='cep')
+def cep_mask(CEP, empty="", placeholder=empty_cep):
+    """ Return 00000-000 """
+    if CEP is not empty:
         a = CEP[0:5]
         b = CEP[5:8]
         return a + '-' + b
+    else:
+        return placeholder
 
 
-class NcmRegex():
-    @register.filter(name='ncm')
-    def NcmMask(NCM):
-        """ Return 0000.00.00 """
+
+@register.filter(name='ncm')
+def ncm_mask(NCM, empty="", placeholder=empty_ncm):
+    """ Return 0000.00.00 """
+    if NCM is not empty:
         a = NCM[0:4]
         b = NCM[4:6]
         c = NCM[6:8]
         return a + '.' + b + '.' + c
+    else:
+        return placeholder

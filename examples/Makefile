@@ -9,4 +9,4 @@ user:
 	./manage.py createsuperuser --username='admin' --email=''
 
 load:
-	./manage.py loaddata datas.xml
+	./manage.py loaddata database.json
