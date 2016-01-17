@@ -18,7 +18,12 @@ INSTALLED_APPS = [
 
 ]
 ```
-para usar o mesmo basta adicionar {% load easy_mask %} no inicio de template/html .
+para usar o mesmo basta adicionar {% load easy_mask %} no inicio de template/html, tendo em mente que, se estiver usando uma extensão de algum template lembre-se sempre de colocar o {% load easy_mask %} a baixo do mesmo, assim:
+
+```python
+    {% extends 'base.html' %}
+    {% load easy_mask %}
+```
 
 ##exemplo de uso
 ```python
