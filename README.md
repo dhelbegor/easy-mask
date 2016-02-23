@@ -2,7 +2,7 @@
 
 Um simples pacote para uso de máscaras no django [demo]
 
-![image example](img/example.png) { float: right; }
+![image example](img/example.png)
 
 
 ##Instalação
