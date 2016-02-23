@@ -22,9 +22,9 @@
                         <th>CPF</th>
                         <th>Tel. Fixo</th>
                         <th>Tel. Celular</th>
-                        <th>CNPJ</th>
+                        <th>ISBN</th>
                         <th>CEP</th>
-			            <th>NCM</th>
+			            <th>CNPJ</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -35,9 +35,9 @@
                         <td>{{ data.cpf | cpf }}</td>
                         <td>{{ data.phone | phone }}</td>
                         <td>{{ data.cell | phone }}</td>
-                        <td>{{ data.cnpj | cnpj }}</td>
+                        <td>{{ data.isbn | isbn }}</td>
                         <td>{{ data.cep | cep }}</td>
-			            <td>{{ data.ncm | ncm }}</td>
+			            <td>{{ data.cnpj | cnpj }}</td>
                     </tr>
                 {% endfor %}
                 </tbody>

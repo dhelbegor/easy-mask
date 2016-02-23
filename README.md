@@ -2,6 +2,9 @@
 
 Um simples pacote para uso de máscaras no django [demo]
 
+![image example](img/example.png) { float: right; }
+
+
 ##Instalação
 ```
     pip install easy-mask
@@ -46,8 +49,10 @@ As máscaras existentes são
 - cnpj
 - cep
 - ncm
+- isbn (sugestão do [alephmelo])
 
 Gostaria de ver alguma máscara que ainda não existe no projeto? então abra uma issue __[aqui]__, e deixe na descrição um exemplo de como seria essa máscara :D .
 
 [aqui]:https://github.com/dhelbegor/easy-mask/issues
 [demo]:https://easy-mask.herokuapp.com
+[alephmelo]:https://github.com/alephmelo

@@ -12,6 +12,7 @@ class PersonalData(Model):
     cnpj          = CharField(_("cnpj"), max_length=14)
     cep           = CharField(_("cep"), max_length=8)
     ncm           = CharField(_("ncm"), max_length=8)
+    isbn          = CharField(_("isbn"), max_length=13)
 
     class Meta:
         ordering = ['first_name']

@@ -2,6 +2,7 @@ __pycache__/
 bin/
 include/
 lib/
+.venv/
 
 *~
 *.sqlite3

@@ -64,6 +64,14 @@
   }
 },
 {
+  "model": "sessions.session",
+  "pk": "m4cajai195ts7f3ipn57r4qdynqznn2c",
+  "fields": {
+    "session_data": "N2VmNTcyZjc4ZjE1ZGFjZWFhNjI4N2UxMmVmOTg4NDExYWFiZDYzZTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9oYXNoIjoiMzQzNzMxM2Q3OWIyODlmMDlmMjIwYjJiOTVhYTgzOGE2YzhiOGNlMCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=",
+    "expire_date": "2016-03-07T22:57:38.698Z"
+  }
+},
+{
   "model": "core.personaldata",
   "pk": 2,
   "fields": {
@@ -74,7 +82,8 @@
     "cpf": "21215542165",
     "cnpj": "11513554659854",
     "cep": "25154546",
-    "ncm": "45112355"
+    "ncm": "45112355",
+    "isbn": "9712531894"
   }
 },
 {
@@ -88,7 +97,8 @@
     "cpf": "21545432232",
     "cnpj": "12154656592323",
     "cep": "62623232",
-    "ncm": "32121658"
+    "ncm": "32121658",
+    "isbn": "9764731348"
   }
 },
 {
@@ -102,7 +112,8 @@
     "cpf": "23154659223",
     "cnpj": "25154126232132",
     "cep": "15965132",
-    "ncm": "61232154"
+    "ncm": "61232154",
+    "isbn": "9788531515"
   }
 },
 {
@@ -116,7 +127,8 @@
     "cpf": "23252623232",
     "cnpj": "25212329656595",
     "cep": "23232652",
-    "ncm": "33269529"
+    "ncm": "33269529",
+    "isbn": "9735566702048"
   }
 },
 {
@@ -130,7 +142,8 @@
     "cpf": "32326565645",
     "cnpj": "32326565448484",
     "cep": "21323264",
-    "ncm": "32326656"
+    "ncm": "32326656",
+    "isbn": "9988566701023"
   }
 },
 {
@@ -144,7 +157,8 @@
     "cpf": "23265656545",
     "cnpj": "26232356565956",
     "cep": "56232326",
-    "ncm": "23265656"
+    "ncm": "23265656",
+    "isbn": "9788566701036"
   }
 },
 {
@@ -158,7 +172,8 @@
     "cpf": "26262665695",
     "cnpj": "62323463526526",
     "cep": "32326564",
-    "ncm": "62322656"
+    "ncm": "62322656",
+    "isbn": "9788487701045"
   }
 },
 {
@@ -172,7 +187,8 @@
     "cpf": "12545612321",
     "cnpj": "12151564654654",
     "cep": "15215156",
-    "ncm": "52160612"
+    "ncm": "52160612",
+    "isbn": "94788536519"
   }
 },
 {
@@ -368,8 +384,8 @@
   "model": "auth.user",
   "pk": 1,
   "fields": {
-    "password": "pbkdf2_sha256$24000$O3tPfgMpo8GV$NSAs2xN5Dg68olODpwhhQ821HT4jUahxrcTpUAh5oaE=",
-    "last_login": "2016-01-01T05:24:59.587Z",
+    "password": "pbkdf2_sha256$24000$W1QtUmfukG7Z$3oDAcQU9ZHw45tpSrjT4U2Whsff8Na2gAw+Hoamrppg=",
+    "last_login": "2016-02-22T22:57:38.538Z",
     "is_superuser": true,
     "username": "admin",
     "first_name": "",
@@ -601,6 +617,162 @@
     "object_repr": "admin",
     "action_flag": 2,
     "change_message": "Modificado password."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2016-02-22T22:58:11.455Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "ANAMARIA NEIBERT",
+    "action_flag": 2,
+    "change_message": "Modificado isbn."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2016-02-22T22:58:44.580Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "7",
+    "object_repr": "ANAMARIA NEIBERT",
+    "action_flag": 2,
+    "change_message": "Modificado isbn."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2016-02-22T22:58:55.020Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "ARLINDA NARDECCHIA",
+    "action_flag": 2,
+    "change_message": "Modificado isbn."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2016-02-22T23:05:01.712Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "BERNA NEEDLE",
+    "action_flag": 2,
+    "change_message": "Modificado isbn."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2016-02-22T23:05:19.525Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "BRYON NEAS",
+    "action_flag": 2,
+    "change_message": "Modificado isbn."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2016-02-22T23:05:52.788Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "MOISES NAGELSCHMIDT",
+    "action_flag": 2,
+    "change_message": "Modificado isbn."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2016-02-22T23:06:08.103Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "9",
+    "object_repr": "THADDEUS NAPIERALA",
+    "action_flag": 2,
+    "change_message": "Modificado isbn."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2016-02-22T23:06:24.432Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "TORRI NEDRY",
+    "action_flag": 2,
+    "change_message": "Modificado isbn."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2016-02-22T23:06:46.418Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "VERTIE NAIDOO",
+    "action_flag": 2,
+    "change_message": "Modificado isbn."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2016-02-22T23:09:11.682Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "8",
+    "object_repr": "ARLINDA NARDECCHIA",
+    "action_flag": 2,
+    "change_message": "Modificado isbn."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2016-02-22T23:09:20.329Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "BERNA NEEDLE",
+    "action_flag": 2,
+    "change_message": "Modificado isbn."
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2016-02-22T23:09:31.162Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "BRYON NEAS",
+    "action_flag": 2,
+    "change_message": "Modificado isbn."
   }
 }
 ]
