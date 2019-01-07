@@ -8,6 +8,7 @@ class PersonalData(Model):
     last_name     = CharField(_("sobrenome"), max_length=100)   
     phone         = CharField(_("telefone"), max_length=10)
     cell          = CharField(_("celular"), max_length=11)
+    rg           = CharField(_("rg"), max_length=10)
     cpf           = CharField(_("cpf"), max_length=11)
     cnpj          = CharField(_("cnpj"), max_length=14)
     cep           = CharField(_("cep"), max_length=8)

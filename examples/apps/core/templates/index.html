@@ -19,9 +19,11 @@
                 <thead class="color">
                     <tr>
                         <th>Nome</th>
+                        <th>RG</th>
                         <th>CPF</th>
                         <th>Tel. Fixo</th>
                         <th>Tel. Celular</th>
+                        <th>NCM</th>
                         <th>ISBN</th>
                         <th>CEP</th>
 			            <th>CNPJ</th>
@@ -32,9 +34,11 @@
                 {% for data in personal %}
                     <tr>
                         <td>{{ data.full_name | title }}</td>
+                        <td>{{ data.rg | rg }}</td>
                         <td>{{ data.cpf | cpf }}</td>
                         <td>{{ data.phone | phone }}</td>
                         <td>{{ data.cell | phone }}</td>
+                        <td>{{ data.ncm | ncm }}</td>
                         <td>{{ data.isbn | isbn }}</td>
                         <td>{{ data.cep | cep }}</td>
 			            <td>{{ data.cnpj | cnpj }}</td>

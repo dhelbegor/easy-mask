@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.core',
-    'easy_mask',
+    'apps.easy_mask',
 ]
 
 MIDDLEWARE_CLASSES = [
